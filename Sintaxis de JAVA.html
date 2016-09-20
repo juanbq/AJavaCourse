@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Sintaxis de JAVA</title>
+
+<style>
+p {
+display: block;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+}
+table {
+white-space: normal;
+line-height: normal;
+font-weight: normal;
+font-size: medium;
+font-style: normal;
+color: -internal-quirk-inherit;
+text-align: start;
+font-variant: normal normal;
+}
+strong, b {
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h3>Convenciones de JAVA</h3>
+<br>
+Los nombres de las Clases deben comenzar por mayusculas<br>
+Los nombres de la variables deben comenzar por minusculas<br>
+<br>
+<h3>Tipos de Datos Primarios</h3>
+<br>
+<table style="text-align: left; width: 709px; height: 228px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>Tipo</td>
+<td>Rango</td>
+<td>Tamaño</td>
+<td>Wrapper</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>--</td>
+<td>---</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Unicode</td>
+<td>16 bits</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>byte</td>
+<td></td>
+<td>8 bits</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>-128 a 127</td>
+<td>16 bits</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>-32768 a 32767</td>
+<td>32 bits</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>-2<sup>63</sup> a 2 <sup> 63</sup>
+-1</td>
+<td>64 bits</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>23 bits precision, 8 exponente y uno para el signo</td>
+<td>32 bits</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>52 bits precision, 11 exponente y uno para el signo</td>
+<td>64 bits</td>
+<td>Double</td>
+</tr>
+</tbody>
+</table>
+<br>
+BigDecimal, BigInteger<br>
+<br>
+<h3>Palabras claves de JAVA</h3>
+<br>
+<table style="text-align: left; width: 1072px; height: 396px;" border="1" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td>break</td>
+<td>class</td>
+<td>boolean</td>
+<td>assert</td>
+<td>abstract</td>
+</tr>
+<tr>
+<td>case</td>
+<td>enum</td>
+<td>byte</td>
+<td>catch</td>
+<td>native</td>
+</tr>
+<tr>
+<td>continue</td>
+<td>extends</td>
+<td>char</td>
+<td>finally</td>
+<td>import</td>
+</tr>
+<tr>
+<td>default</td>
+<td>implements</td>
+<td>constant</td>
+<td>throw</td>
+<td>package</td>
+</tr>
+<tr>
+<td>do</td>
+<td>intanceof</td>
+<td>double</td>
+<td>throws</td>
+<td>private</td>
+</tr>
+<tr>
+<td>else</td>
+<td>interface</td>
+<td>float</td>
+<td>try</td>
+<td>protected</td>
+</tr>
+<tr>
+<td>for</td>
+<td>new</td>
+<td>int</td>
+<td></td>
+<td>public</td>
+</tr>
+<tr>
+<td>goto</td>
+<td>super</td>
+<td>long</td>
+<td></td>
+<td>static</td>
+</tr>
+<tr>
+<td>if</td>
+<td>this</td>
+<td>short</td>
+<td></td>
+<td>strictfp</td>
+</tr>
+<tr>
+<td>return</td>
+<td></td>
+<td>void</td>
+<td></td>
+<td>final</td>
+</tr>
+<tr>
+<td>switch</td>
+<td></td>
+<td></td>
+<td></td>
+<td>synchronized</td>
+</tr>
+<tr>
+<td>while</td>
+<td></td>
+<td></td>
+<td></td>
+<td>transient</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>volatile</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<section>
+</section>
+<h2>Tipos de Clases Wrapper</h2>
+<aside> Wrapper: Envoltura, como el papel de un caramelo<br>
+<br>
+</aside>
+<h3><aside>Arreglos en Java</aside></h3>
+Arreglos o vectores, si son de dos dimensiones se llaman arreglos
+bidimensionales o matrices. Pueden tener n dimensiones.<br>
+<br>
+Se usan llaves cuadradas, parentesis cuadrados o corchetes: [ ].<br>
+<br>
+Uso:<br>
+<code>int[] arreglo_Datos;
+<br>
+arreglos_Datos[0]= 12;
+<br>
+arreglo_Datos[1]= 450;
+<br>
+System.out.println(arreglo_Datos[1]);
+<br>
+</code>
+<table style="width: 289px; height: 516px;" border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr valign="top">
+<th style="width: 133px; vertical-align: top; height: 30px;" rowspan="1" colspan="1">
+<p class="Table"><b>Primitive type</b><br>
+</p>
+</th>
+<th colspan="1" rowspan="1" style="width: 141px; vertical-align: top; height: 30px;">
+<p class="Table"><b>Default</b><br>
+</p>
+</th>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>boolean</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>false</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>char</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>&#8216;\u0000&#8217; (null)</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>byte</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>(byte)0</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>short</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>(short)0</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>int</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>0</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>long</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" style="width: 141px; vertical-align: top;">
+<p class="Table"><b>0L</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" style="width: 133px; vertical-align: top;">
+<p class="Table"><b>float</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" valign="top" width="141">
+<p class="Table"><b>0.0f</b><br>
+</p>
+</td>
+</tr>
+<tr valign="top">
+<td colspan="1" rowspan="1" valign="top" width="133">
+<p class="Table"><b>double</b><br>
+</p>
+</td>
+<td colspan="1" rowspan="1" valign="top" width="141">
+<p class="Table"><b>0.0d</b><br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<h3>Los paquetes (o como mantener mi codigo aparte de los demás)</h3>
+Los paquetes se utilizan para "aislar" de alguna manera nuestro codigo
+de otras personas.<br>
+<br>
+Pero como identificar mi codigo en un &nbsp;paquete, sin que
+utilice el mismo nombre que otra persona? Pues hagamolo como si
+perteneciera al dominio de intenet:<br>
+<br>
+<code>
+package com.miempresa.contabilidad;<br>
+</code>
+<h3>Usando otros componentes:</h3>
+En ocasiones necesitamos componenetes de otras partes o de librerias
+standard de Java:<br>
+<br>
+Para eso usamos: <big><span style="font-weight: bold;">import</span></big><br>
+<br><code>
+import java.util.ArrayList; <br>
+</code>
+<br>
+o tambien:<br>
+<br>
+<code>
+import java.util.*;<br>
+</code>
+</body></html>
